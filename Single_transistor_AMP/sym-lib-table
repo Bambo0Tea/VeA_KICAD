@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name PWR_Con)(type Legacy)(uri ${KIPRJMOD}/Library/PWR_Con.lib)(options "")(descr ""))
+  (lib (name Signal_Out)(type Legacy)(uri ${KIPRJMOD}/Library/Signal_Out.lib)(options "")(descr ""))
+)
