@@ -1,0 +1,135 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title "9V stab"
+Date "24.11.2020"
+Rev "V1.0"
+Comp "Ilja Vilevka"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM317_TO-220 U4
+U 1 1 5FC14E18
+P 5100 3300
+F 0 "U4" H 5240 3060 50  0000 C CNN
+F 1 "LM317_TO-220" H 5100 3451 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5100 3550 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 5100 3300 50  0001 C CNN
+	1    5100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C8
+U 1 1 5FC151EC
+P 4000 3730
+F 0 "C8" H 4115 3776 50  0000 L CNN
+F 1 "0.1uF" H 4115 3685 50  0000 L CNN
+F 2 "" H 4000 3730 50  0001 C CNN
+F 3 "~" H 4000 3730 50  0001 C CNN
+	1    4000 3730
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FC167DF
+P 6000 3450
+F 0 "R4" H 6070 3496 50  0000 L CNN
+F 1 "240R" H 6070 3405 50  0000 L CNN
+F 2 "" V 5930 3450 50  0001 C CNN
+F 3 "~" H 6000 3450 50  0001 C CNN
+	1    6000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FC16E85
+P 5100 4050
+F 0 "R3" H 5170 4096 50  0000 L CNN
+F 1 "1.5k" H 5170 4005 50  0000 L CNN
+F 2 "" V 5030 4050 50  0001 C CNN
+F 3 "~" H 5100 4050 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C9
+U 1 1 5FC17894
+P 6800 3740
+F 0 "C9" H 6915 3786 50  0000 L CNN
+F 1 "1uF" H 6915 3695 50  0000 L CNN
+F 2 "" H 6800 3740 50  0001 C CNN
+F 3 "~" H 6800 3740 50  0001 C CNN
+	1    6800 3740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4200 5100 4200
+Connection ~ 5100 4200
+Wire Wire Line
+	5100 3600 5100 3900
+Wire Wire Line
+	6000 3600 5100 3600
+Wire Wire Line
+	5100 3600 5100 3610
+Connection ~ 5100 3600
+Wire Wire Line
+	6000 3300 5400 3300
+Connection ~ 6000 3300
+$Comp
+L power:Earth #PWR03
+U 1 1 5FC1A04E
+P 5100 4200
+F 0 "#PWR03" H 5100 3950 50  0001 C CNN
+F 1 "Earth" H 5100 4050 50  0001 C CNN
+F 2 "" H 5100 4200 50  0001 C CNN
+F 3 "~" H 5100 4200 50  0001 C CNN
+	1    5100 4200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3400 3300 0    50   Input ~ 0
+VCC
+Text HLabel 7400 3300 2    50   Input ~ 0
++9V
+Text HLabel 7400 4200 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3400 3300 4000 3300
+Wire Wire Line
+	4000 4200 4000 3880
+Wire Wire Line
+	4000 3580 4000 3300
+Connection ~ 4000 3300
+Wire Wire Line
+	4000 3300 4800 3300
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5FC1F748
+P 4000 3300
+F 0 "#FLG0105" H 4000 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 3473 50  0000 C CNN
+F 2 "" H 4000 3300 50  0001 C CNN
+F 3 "~" H 4000 3300 50  0001 C CNN
+	1    4000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4200 6800 4200
+Wire Wire Line
+	6000 3300 6800 3300
+Wire Wire Line
+	6800 3590 6800 3300
+Connection ~ 6800 3300
+Wire Wire Line
+	6800 3300 7400 3300
+Wire Wire Line
+	6800 3890 6800 4200
+Connection ~ 6800 4200
+Wire Wire Line
+	6800 4200 7400 4200
+$EndSCHEMATC

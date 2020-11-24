@@ -1,0 +1,122 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM317_TO-220 U3
+U 1 1 5FC0EDEE
+P 5500 3000
+F 0 "U3" H 5650 2730 50  0000 C CNN
+F 1 "LM317_TO-220" H 5500 3151 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5500 3250 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C6
+U 1 1 5FC0F540
+P 4600 3150
+F 0 "C6" H 4715 3196 50  0000 L CNN
+F 1 "220uF" H 4715 3105 50  0000 L CNN
+F 2 "" H 4600 3150 50  0001 C CNN
+F 3 "~" H 4600 3150 50  0001 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4210 3000 4600 3000
+Wire Wire Line
+	4600 3000 5200 3000
+Connection ~ 4600 3000
+$Comp
+L Device:R R1
+U 1 1 5FC10D71
+P 5500 3550
+F 0 "R1" H 5570 3596 50  0000 L CNN
+F 1 "390R" H 5570 3505 50  0000 L CNN
+F 2 "" V 5430 3550 50  0001 C CNN
+F 3 "~" H 5500 3550 50  0001 C CNN
+	1    5500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC1143E
+P 6310 3150
+F 0 "R2" H 6380 3196 50  0000 L CNN
+F 1 "240R" H 6380 3105 50  0000 L CNN
+F 2 "" V 6240 3150 50  0001 C CNN
+F 3 "~" H 6310 3150 50  0001 C CNN
+	1    6310 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3000 6310 3000
+Wire Wire Line
+	6310 3310 5500 3310
+Wire Wire Line
+	5500 3310 5500 3300
+Connection ~ 5500 3310
+Wire Wire Line
+	5500 3310 5500 3400
+Wire Wire Line
+	4600 3300 4600 3700
+Wire Wire Line
+	4600 3700 5500 3700
+$Comp
+L Device:CP1 C7
+U 1 1 5FC11EC7
+P 7000 3150
+F 0 "C7" H 7115 3196 50  0000 L CNN
+F 1 "10uF" H 7115 3105 50  0000 L CNN
+F 2 "" H 7000 3150 50  0001 C CNN
+F 3 "~" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6310 3310 6310 3300
+Wire Wire Line
+	6310 3000 7000 3000
+Connection ~ 6310 3000
+Wire Wire Line
+	7000 3300 7000 3700
+Wire Wire Line
+	7000 3700 5500 3700
+Connection ~ 5500 3700
+$Comp
+L power:Earth #PWR02
+U 1 1 5FC137C6
+P 5500 3700
+F 0 "#PWR02" H 5500 3450 50  0001 C CNN
+F 1 "Earth" H 5500 3550 50  0001 C CNN
+F 2 "" H 5500 3700 50  0001 C CNN
+F 3 "~" H 5500 3700 50  0001 C CNN
+	1    5500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3700 7600 3700
+Connection ~ 7000 3700
+Wire Wire Line
+	7000 3000 7600 3000
+Connection ~ 7000 3000
+Text HLabel 7600 3000 2    50   Input ~ 0
++3.3V
+Text HLabel 7600 3700 2    50   Input ~ 0
+GND
+Text HLabel 4210 3000 0    50   Input ~ 0
+VCC
+$EndSCHEMATC

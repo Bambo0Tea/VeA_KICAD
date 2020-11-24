@@ -1,0 +1,126 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "220V_AC"
+Date "24.11.2020"
+Rev "V1.0"
+Comp "Ilja Vilevka"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Transformer_1P_1S T1
+U 1 1 5FBF535A
+P 5140 3790
+F 0 "T1" H 5140 4070 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 5130 3490 50  0000 C CNN
+F 2 "" H 5140 3790 50  0001 C CNN
+F 3 "~" H 5140 3790 50  0001 C CNN
+	1    5140 3790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4740 3590 4680 3590
+Wire Wire Line
+	4680 3590 4680 3730
+Wire Wire Line
+	4680 3730 4570 3730
+Wire Wire Line
+	4570 3830 4680 3830
+Wire Wire Line
+	4680 3830 4680 3990
+Wire Wire Line
+	4680 3990 4740 3990
+$Comp
+L Device:D_Bridge_+-AA D1
+U 1 1 5FBF5366
+P 6110 3790
+F 0 "D1" H 6240 4010 50  0000 L CNN
+F 1 "D_Bridge_+-AA" H 5840 3440 50  0000 L CNN
+F 2 "" H 6110 3790 50  0001 C CNN
+F 3 "~" H 6110 3790 50  0001 C CNN
+	1    6110 3790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6110 3490 5540 3490
+Wire Wire Line
+	5540 3490 5540 3590
+Wire Wire Line
+	5810 3790 5810 4290
+Wire Wire Line
+	6110 4090 5540 4090
+Wire Wire Line
+	5540 4090 5540 3990
+$Comp
+L Device:CP1 C1
+U 1 1 5FBF5371
+P 7220 4040
+F 0 "C1" H 7240 4130 50  0000 L CNN
+F 1 "470uF" H 7280 3920 50  0000 L CNN
+F 2 "" H 7220 4040 50  0001 C CNN
+F 3 "~" H 7220 4040 50  0001 C CNN
+	1    7220 4040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7220 4290 7220 4190
+Wire Wire Line
+	5810 4290 7220 4290
+Wire Wire Line
+	7220 3790 7220 3890
+Wire Wire Line
+	6410 3790 7220 3790
+Connection ~ 7220 4290
+Wire Wire Line
+	7220 3790 7660 3790
+Connection ~ 7220 3790
+Wire Wire Line
+	7220 4290 7660 4290
+Text HLabel 7660 3790 2    50   Input ~ 0
+VCC
+Text HLabel 7660 4290 2    50   Input ~ 0
+GND
+Text Notes 7040 4180 0    50   ~ 0
+50V
+$Comp
+L PWR_Con:PWR_Con P1
+U 1 1 5FC01D41
+P 4420 3780
+F 0 "P1" H 4420 3920 50  0000 C CNN
+F 1 "PWR_Con" H 4410 3640 50  0000 C CNN
+F 2 "" H 4370 3780 50  0001 C CNN
+F 3 "" H 4370 3780 50  0001 C CNN
+	1    4420 3780
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FC1BDBA
+P 4680 3590
+F 0 "#FLG0101" H 4680 3665 50  0001 C CNN
+F 1 "PWR_FLAG" H 4680 3740 50  0000 C CNN
+F 2 "" H 4680 3590 50  0001 C CNN
+F 3 "~" H 4680 3590 50  0001 C CNN
+	1    4680 3590
+	1    0    0    -1  
+$EndComp
+Connection ~ 4680 3590
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FC1C327
+P 4680 3990
+F 0 "#FLG0102" H 4680 4065 50  0001 C CNN
+F 1 "PWR_FLAG" H 4680 4170 50  0000 C CNN
+F 2 "" H 4680 3990 50  0001 C CNN
+F 3 "~" H 4680 3990 50  0001 C CNN
+	1    4680 3990
+	-1   0    0    1   
+$EndComp
+Connection ~ 4680 3990
+$EndSCHEMATC
