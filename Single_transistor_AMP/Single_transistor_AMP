@@ -1,0 +1,22 @@
+Source,D:\Vea_Kicad\Single_transistor_AMP\Single_transistor_AMP.sch
+Kicad Rev,Eeschema (5.1.7)-1
+Generated Date,12/16/2020 12:51:30 AM
+
+Title,Single_Transistor_AMP
+Company,Ilja Vilevka
+Revision,V1.0
+Date Issue,25.11.2020
+Comment,Darbs no III lekcijas
+
+Reference,Value,Library,Library Ref
+P1,Signal_In,PWR_Con,PWR_Con
+C1,20uF,Device,C
+R1,22k,Device,R
+R2,6.8k,Device,R
+R3,4.7k,Device,R
+R4,1.8k,Device,R
+C2,50uF,Device,C
+Q1,BC548,Transistor_BJT,BC548
+C3,20uF,Device,C
+P2,Signal_Out,PWR_Con,PWR_Con
+P3,PWR_Con,PWR_Con,PWR_Con
