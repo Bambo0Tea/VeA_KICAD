@@ -223,9 +223,9 @@ Wire Wire Line
 	3950 5300 4050 5300
 Wire Wire Line
 	3950 5150 3950 5300
-Text GLabel 3550 3550 0    39   Input ~ 0
-RXD1
 Text GLabel 3550 3450 0    39   Input ~ 0
+RXD1
+Text GLabel 3550 3550 0    39   Input ~ 0
 TXD1
 Text GLabel 4250 3000 1    39   Input ~ 0
 +5V

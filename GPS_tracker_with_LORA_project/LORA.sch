@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "GPS_tracker_with_LORA_project"
+Date "26.01.2020"
+Rev "V2.0"
+Comp "Iļja Viļevka"
 Comment1 ""
 Comment2 ""
 Comment3 ""
